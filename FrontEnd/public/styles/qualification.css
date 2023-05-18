@@ -1,0 +1,48 @@
+.form1{
+    display: flex;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    justify-content: center;
+}
+
+input{
+    padding: 0.5rem;
+    margin-right :0.3rem;
+    border-radius: 0.2rem;
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+    width: 10%;
+    background-color: white;
+    border-radius: 0.2rem;
+    font-size: large;
+}
+
+.btn-div{
+    margin: 1.5rem;
+}
+
+table,th,td,tr{
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+ .btnnn{
+    text-align: center;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    width: 10%;
+    background-color: white;
+    border-radius: 0.2rem;
+    font-size: large;
+    border: 1px solid black;  
+    width: 60%;
+    cursor: pointer;
+ }

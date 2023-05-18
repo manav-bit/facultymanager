@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/qualification.css">
+</head>
+<body>
+
+    <section class="header_logo">
+        <img src="assets/logo.png" alt="Logo">
+    </section>
+    
+    <section class="container forms">
+        <div class="form signup">
+            <div class="form-content">
+                <header>Sign Up</header>
+                <form id="form" action="http://localhost:4000/user" method="post">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" name="email" id="email" required="true"/>
+                    </div>
+    
+                    <div class="field input-field">
+                        <input type="password" name="password" placeholder="Create password" id="password" required="true"/>
+                    </div>
+    
+                    <div class="field input-field">
+                        <input type="password" name="confirmPassword" placeholder="Confirm password" id="confirmPassword" required="true"/>
+                        <i class="bx bx-hide eye-icon"></i>
+                    </div>
+
+                    <div style="visibility: hidden; color: red;" id="wrongDiv">Wrong</div>
+    
+                    <div class="field button-field">
+                        <button id="signup" type="submit">Signup</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span class="link login-link">Already have an account?</span>
+                    <a href="http://localhost:4000/login">Login</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="server.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&family=Poppins:ital,wght@0,200;0,300;1,300&display=swap");
+
+body{
+  margin: 1rem;
+}
+/* form {
+  margin: 5rem;
+  padding: 0.2rem;
+}
+body h1 {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.form {
+  font-size: 1.3em;
+  margin: 0 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #555;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+input[type="radio"] {
+  margin: 0 14px;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  margin: 0 14px;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="email"] {
+  margin: 0 14px;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin:1rem;
+    font-size:xx-large;
+    padding: 1rem;
+    font-weight:600;
+}
+
+button {
+  background-color: black;
+  padding: 0.8rem;
+  width: 150px;
+  border-radius: 1rem;
+  font-size: large;
+  margin-top: 0.5rem;
+  color: white;
+} */
+
+
+/* .personal{
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  background: #f1f5f9;
+}
+
+h1{
+  text-align: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  justify-content: center;
+}
+
+input{
+  width: 15%;
+  margin-right: 1rem;
+}
+
+.alignment {
+ margin-top: 0.7rem;
+ margin-right: 0.8rem;
+}
+
+label,select{
+  margin-right: 1rem;
+}
+select{
+  width: 7%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.button{
+  width: 10%;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.3rem;
+}
+ */
+
+/* .personal{
+  display: flex;
+  align-items: center;
+  margin-left: 15.38rem;
+}
+ .inner{
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+}
+h3{
+  margin-right: 5rem;
+}
+
+input{
+  margin: 0.3rem;
+} */
+.personal{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  background-color: #f1f5f9;
+  padding: 2rem;
+}
+
+.chk{
+  display: flex;
+  align-items: center;
+}
+
+input,select{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1.5px solid black;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  color: black;
+}
+
+input:focus{
+  border: 1.5px solid black;
+}
+
+.align{
+margin-left: 14.44rem;
+}
+
+.align2{
+margin-top: 2rem;
+}
+
+button{
+  margin-top: 1rem;
+  width: 15%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+hr{
+  margin: 2rem;
+}
+
+h1{
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.chk2{
+display: flex;
+flex-direction: column;
+margin: auto;
+background-color:#f1f5f9 ;
+}
+
+.address{
+  display: flex;
+  margin-left: 12.8rem;
+}
+
+.box{
+  margin-top: 0.3rem;
+}
+
+.mystyle{
+  cursor: none;
+}
+/* 
+.qualification{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding-top: 1rem; 
+}
+
+table,td,tr{
+  margin: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-collapse: collapse;
+}
+
+.table_input{
+  width: 35%;
+}
+
+/* .adj_table{
+  width: 50%;
+} */
+
+/* th{
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 1rem;
+  
+}  */
+/* .table {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.table thead {
+  position: sticky;
+  top: 0;
+}
+
+.table thead th {
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+}
+
+.table thead th.header-label {
+  cursor: pointer;
+  color: white;
+  border: 1px solid black;
+}
+
+.table th,
+.table td {
+  padding: 1rem 0.9rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table input {
+  width: 100px;
+  margin: auto;
+}
+table,td,tr{
+  border-collapse: collapse;
+  margin: 4rem;
+}
+
+.btn_qualification{
+  size: 1rem;
+}
+
+.cls1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

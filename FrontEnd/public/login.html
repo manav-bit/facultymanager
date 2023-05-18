@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/qualification.css">
+</head>
+<body>
+    <section class="header_logo">
+        <img src="assets/logo.png" alt="Logo">
+    </section>
+
+    <section class="container forms">
+        <div class="form signup">
+            <div class="form-content">
+                <header>Login </header>
+                <form action="http://localhost:4000/user/login" method="post">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" name="email" required = "true"/>
+                    </div>
+                    <div class="field input-field">
+                        <input type="password" name="password" placeholder="Enter password" required = "true"/>
+                    </div>
+                    <div class="field button-field">
+                        <button type="submit" id="login">Login</button>
+                    </div>
+                </form>
+                <div class="form-link">
+                    <span class="link login-link">Already have an account?</span>
+                    <a href="http://localhost:4000/signup">SignUp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="server.js"></script>
+</body>
+</html>

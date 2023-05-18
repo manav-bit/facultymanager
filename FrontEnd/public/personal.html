@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/qualification.css">
+    <!-- Add your other CSS stylesheets here -->
+<link rel="stylesheet" href="/styles/sidebar.css">
+    
+</head>
+<body>
+    <section class="header_logo">
+        <img src="/assets/logo.png" alt="Logo">
+    </section>
+    <div class="sidebar">
+        <a href="/home">Home</a>
+        <a href="/profile">Profile</a>
+        <a href="/settings">Settings</a>
+        <a href="/login" class="logout">Logout</a>
+                <!-- Add more links here as needed -->
+    </div>
+
+    <div class="content">
+        <!-- Your existing content goes here -->
+        <!-- Place your existing form code or other page content here -->
+        <h1>Personal Profile</h1>
+        <div class="personal">
+
+        <form action="/personal" method="post" id="myForm">
+         
+
+          <input type="hidden" name="facultyId"  id="facultyId" value="0">
+          <div class="chk">
+            <h3>Personal Details</h3>
+            <div class="chk" style="margin-left: 5rem;">
+              <select name="title" style="width: 183px" required style="margin-left: 10rem">
+                <option value="Gender">Title</option>
+                <option value="Prof.">Prof.</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Ms.">Ms.</option>
+                <option value="Mr.">Mr.</option>
+              </select>
+            </div>
+            <input type="text" name="firstName" placeholder="First Name" required />
+            <input type="text" name="middleName" placeholder="Middle Name" />
+            <input type="text" name="lastName" placeholder="Last Name" required />
+          </div>
+          <div class="align chk">
+            <input type="date" name="dateOfBirth" placeholder="Date Of Birth" required style="width: 185px" />
+            <select name="gender" style="width: 183px">
+              <option value="Gender">Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Transgender">Transgender</option>
+            </select>
+          </div>
+          <hr />
+          <div class="chk">
+            <h3 style="margin-right: 6.1rem">Parent Details</h3>
+            <div class="chk">
+              <input type="text" name="fatherName" placeholder="Father's Name" required style="margin-left: 4px;"/>
+              <input type="text" name="motherName" placeholder="Mother's Name" required style="margin-left: 4px;"/>
+            </div>
+          </div>
+    
+          <hr />
+          <div class="chk">
+            <h3 style="margin-right: 6.2rem">Martial Status</h3>
+            <select style="width: 183px" name="martialStatus" onClick={handleChange(this)}>
+              <option value="Martial_Status">Martial Status</option>
+              <option value="Married">Married</option>
+              <option value="Unmarried">Unmarried</option>
+              <option value="Widow">Widow</option>
+              <option value="Divorced">Divorced</option>
+            </select>
+    
+            <div id="ifYes" style="display: none;">
+              <input type="text" id="spouse_name" name="spouseName" placeholder="Spouse Name" />
+            </div>
+    
+            <script>
+              function handleChange(that) {
+                if (that.value === "Married") {
+                  document.getElementById("ifYes").style.display = "block";
+                }
+                else {
+                  document.getElementById("ifYes").style.display = "none";
+                }
+              }
+            </script>
+          </div>
+          <hr />
+          <!-- present address -->
+          <div class="chk">
+            <h3 style="margin-right: 4.53rem">Present Address</h3>
+            <div class="chk">
+              <input type="text" id="House No Floor" name="houseNo" placeholder="House No Floor" required style="margin-left: 4px"/>
+              <input type="text" id="Street/Locality" name="street" placeholder="Street/Locality" required />
+              <input type="text" id="City" name="city" placeholder="City" required />
+              <input type="text" id="State" name="state" placeholder="State" required />
+            </div>
+    
+          </div>
+          <div class="chk align">
+            <input type="text" id="country" name="country" placeholder="Country" required />
+            <input type="number" id="pincode" name="pincode" placeholder="Pincode" required />
+          </div>
+          <div class="address">
+            <input class="box" type='checkbox' name="filladdress" id="filladdress" onClick="fillAddress()" />
+            <label class="labell">Permanent Address is same as Present Address </label>
+          </div>
+          <!-- peermanent address -->
+          <div class="chk align2">
+            <h3 style="margin-right: 2.53rem"> Permanent Address</h3>
+            <input type="text" id="p House No Floor" name="phouseNo" placeholder="House No Floor" required />
+            <input type="text" name="pstreet" id="p Street/Locality" placeholder="Street/Locality" required />
+            <input type="text" id="p City" placeholder="City" name="pcity" required />
+            <input type="text" id="p State" name="pstate" placeholder="State" required />
+          </div>
+          <div class = "chk align">
+            <input type="text" id="p Country" name="pcountry" placeholder="Country" required />
+            <input type="number" id="p Pincode" name="ppincode" placeholder="Pincode" required />
+          </div>
+          <hr />
+          <div class="chk align2">
+            <h3 style="margin-right: 5.15rem">Contact Details</h3>
+            <input type="number" id=" LandLine No" name="landlineNo" placeholder="LandLine No." />
+            <input type="number" id=" Mobile No" name="mobileNo" placeholder="Mobile.No" required />
+            <input type="number" id="Alternate_Mobile_No" mame="alternateMobileNo" placeholder="Alternate Mobile No"
+              required />
+          </div>
+          <hr />
+          <div class="chk align2">
+            <h3 style="margin-right: 11.85rem">Mail</h3>
+            <input type="email" name="personalEmail" placeholder="Personal Mail ID" required />
+    
+            <input type="email" name="officialEmail" placeholder="Official Mail ID" required />
+          </div>
+          <hr />
+          <div class="chk align2">
+            <h3 style="margin-right: 9.8rem">Aadhar</h3>
+            <input type="text" name="adhar" placeholder="Aadhar Number" required />
+          </div>
+          <div class="chk">
+            <h3 style="margin-right: 6.7rem">PAN Number</h3>
+            <input type="text" name="pan" placeholder="PAN Number" />
+          </div>
+          <hr />
+          <div class="chk align2">
+            <h3 style="margin-right: 12.7rem">HR</h3>
+            <input type="text" name="dateOfJoin" placeholder="Date of Joining" />
+            <input type="text" name="designation" placeholder="Designation" />
+            <input type="text" name="department" placeholder="Department" />
+          </div>
+          <div class="chk align">
+            <select name="isLeft" style="width: 181.5px,margin-left, 14.2rem; margin-right: 1rem">
+              <option value="Is Left">Is Left</option>
+              <option value="Yes">YES</option>
+              <option value="No">No</option>
+            </select>
+            <input type="text" name="dateOfRelieving" placeholder="Date of Relieving" style="margin-left: 100px;"/>
+          </div >
+          <div class="">
+            <button type="button" onclick="previewForm()">Preview</button>
+            <button type="submit" onclick=check(e) style="cursor: pointer;">Save</button>
+          </div>
+          
+        </form>
+
+    </div>
+
+    <!-- Add your JavaScript scripts here if needed -->
+    <script>
+      function check(e){
+        e.preventDefault();
+
+      }
+      const url = window.location.href;
+const parts = url.split('/');
+const facultyId = parts[parts.length - 2];
+      document.getElementById("facultyId").value=facultyId;
+
+
+      // previewing
+      function previewForm() {
+      // Get the form element
+      const form = document.getElementById("myForm");
+
+      // Check if the form element exists
+      if (!form) {
+        console.error("Form element not found.");
+        return;
+      }
+
+      // Create a new FormData object
+      const formData = new FormData(form);
+
+      // Generate the preview
+      let preview = "<h1>Form Preview</h1>";
+      for (let pair of formData.entries()) {
+        preview += `<p><strong>${pair[0]}:</strong> ${pair[1]}</p>`;
+      }
+
+      // Display the preview in a new window or alert box
+      // Replace with your desired way of displaying the preview
+      // Example: Display in a new window
+      const previewWindow = window.open("", "_blank");
+      previewWindow.document.write(preview);
+    }
+    </script>
+</body>
+</html>

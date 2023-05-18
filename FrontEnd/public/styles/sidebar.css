@@ -1,0 +1,109 @@
+
+        /* Define CSS styles for the sidebar */
+        .sidebar {
+            width: 240px;
+            height: 100vh;
+            background-color: #f1f1f1;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+            transition: width 0.3s;
+            z-index: 9999;
+        }
+
+        .sidebar.collapsed {
+            width: 70px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            transition: all 0.3s;
+            border-left: 4px solid transparent;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+            border-left-color: #333;
+        }
+
+        .sidebar.collapsed a {
+            padding: 12px;
+            text-align: center;
+        }
+
+        .sidebar .toggle-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .sidebar .toggle-button:hover {
+            background-color: #ddd;
+        }
+
+        .sidebar .toggle-button.collapsed {
+            width: 50px;
+        }
+
+        .sidebar .toggle-button.collapsed span {
+            display: none;
+        }
+
+        .sidebar .toggle-button span {
+            display: block;
+            width: 14px;
+            height: 2px;
+            background-color: #333;
+            margin-bottom: 4px;
+            transition: all 0.3s;
+        }
+
+        .content {
+            margin-left: 240px; /* Adjust this value based on the width of the sidebar */
+            padding: 16px;
+        }
+
+        /* Add media queries for responsive design */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 70px;
+            }
+
+            .sidebar.collapsed {
+                width: 50px;
+            }
+
+            .sidebar.collapsed a {
+                padding: 12px;
+                text-align: center;
+            }
+
+            .sidebar .toggle-button {
+                width: 30px;
+                height: 30px;
+            }
+
+            .content {
+                margin-left: 70px;
+            }
+        }
+        .logout {
+            position: absolute;
+            bottom: 0;
+          }
