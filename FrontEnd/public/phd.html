@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHD Details</title>
+    <link rel="stylesheet" href="/styles/phd.css">
+</head>
+<body>
+    <header>
+        <img src="/assets/logo.png" alt="Logo" >
+    </header>
+</header>
+
+<div class="nav_phd">
+    <nav>
+        <h3>Navigate</h3>
+            <a href="#">Personal Details</a>
+            <a href="#">Qualifications Details</a>
+            <a href="#">PHD Details</a>
+            <a href="#">Experience Details</a>
+            <a href="#">Patent Details</a>
+      <a href="#">Paper Public Details</a>
+      <a href="#">Research Details</a>
+      <a href="#">Journal Details</a>
+      <a href="#">Book Details</a>
+    </nav>
+    <div class="form-phd">
+        <h1 class="common">PHD Details</h1>
+        <form action="/phd" method="post">
+            <input type="hidden" id="facultyID" name="facultyID" value="" />
+                <label>College Department</label>
+                <input type="text" id="department"name="college_depart" />
+
+                <label>University</label>
+                <input type="text" id="University" name="University" />
+
+                <label>Degree Status</label>
+                <input type="text" id="Status" name="status_" />
+
+                <label>Date of Award</label>
+                <input type="date" id="Date of Award" name="date_of_award"/>
+
+                <label>Thesis Title</label>
+                <input type="text" id="Thesis _title" name="thesis_title" />
+
+                <label>Registration Date</label>
+                <input type="date" id="Registration_Date" name="registration_date" />
+
+                <label>Thesis Submission Date</label>
+                <input type="date" id="Thesis_Submission_Date" name="thesis_submission_date" />
+
+                <label>Detail of Supervisors</label>
+                <input type="text" id="Detail_of_Supervisors" name="detailofsupervisor" />
+
+                <div class="btn common">
+                    <button class="btn-save btn_common" type="submit">Save</button>
+                    <button class="btn-preview btn_common">Preview</button>
+                   </div>
+        </form>
+    </div>
+</div>
+<script>
+    function getFacultyIdFromCookie() {
+    const cookiestring= document.cookie
+    const ans=cookiestring.split("=")
+     var facultyId =ans[1]
+   console.log(facultyId);
+     document.getElementById("facultyID").value=facultyId;
+     
+   }
+     // Retrieve facultyID from the URL and set it as the value of the hidden field
+     window.addEventListener('load', getFacultyIdFromCookie);
+</script>
+</body>
+</html>

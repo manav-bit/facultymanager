@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  select {
+    width: 316px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #previewSection {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+  }
+  
+  #previewSection h2 {
+    margin-bottom: 10px;
+  }
+  
+  #previewSection table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #previewSection td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #previewSection td:first-child {
+    font-weight: bold;
+    width: 200px;
+  }
+  
+  #previewSection button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #previewSection button:hover {
+    background-color: #555;
+  }
+  
+  

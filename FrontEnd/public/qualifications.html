@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qualification Details</title>
+  <link rel="stylesheet" href="/styles/qualifications.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="/assets/logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <div class="nav_form">
+    <nav>
+      <h3>Navigate</h3>
+      <a href="#">Personal Details</a>
+      <a href="#">Qualifications Details</a>
+      <a href="#">PHD Details</a>
+      <a href="#">Experience Details</a>
+      <a href="#">Patent Details</a>
+      <a href="#">Paper Public Details</a>
+      <a href="#">Research Details</a>
+      <a href="#">Journal Details</a>
+      <a href="#">Book Details</a>
+    </nav>
+    <div class="inner_crud-section">
+      <h1 class="qualification_heading">Qualifications</h1>
+      <form class="frm">
+        <div class="form">
+          <input type="text" placeholder="Level of Education" name="level" id="level" />
+          <input type="text" placeholder="Exam Degree" name="Exam_Degree" id="exam" />
+          <input type="text" placeholder="School/College" name="School_College" id="school" />
+          <input type="text" placeholder="University" name="Board_Uni" id="university" />
+          <input type="text" placeholder="Year of Passing" name="year_of_passing" id="pass" />
+        </div>
+        <div class="form">
+          <input type="text" placeholder="Maximum Marks" name="Max_marks_grades" id="maxmarks" />
+          <input type="text" placeholder="Maximum Obtained" name="marks_grade_obtained" id="obtmarks" />
+          <input type="text" placeholder="Percentage" name="percent_marks" id="percentage" />
+          <input type="text" placeholder="Division" name="division" id="division" />
+          <input type="text" placeholder="Achievement" name="achievement" id="achievement" />
+          <input type="hidden" id="facultyID" name="facultyID" value="" />
+
+        </div>
+        <div class="btn-div">
+          <button class="btn" type="button" id="addRow">Add Row</button>
+          <button class="btn" type="submit" id="submit">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <table id="data">
+    <thead>
+      <tr>
+        <th>Level</th>
+        <th>Exam Degree</th>
+        <th>School/College</th>
+        <th>University</th>
+        <th>Year of Passing</th>
+        <th>Maximum Marks</th>
+        <th>Marks Obtained</th>
+        <th>Percentage</th>
+        <th>Division</th>
+        <th>Achievement</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script type="text/javascript" src="/qualifications.js"></script>
+  
+</body>
+</html>

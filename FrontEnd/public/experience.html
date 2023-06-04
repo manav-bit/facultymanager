@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience Details</title>
+  <link rel="stylesheet" href="/styles/experience.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="/assets/logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <div class="nav_form">
+    <nav>
+      <h3>Navigate</h3>
+      <a href="#">Personal Details</a>
+      <a href="#">Qualifications Details</a>
+      <a href="#">PHD Details</a>
+      <a href="#">Experience Details</a>
+      <a href="#">Patent Details</a>
+      <a href="#">Paper Public Details</a>
+      <a href="#">Research Details</a>
+      <a href="#">Journal Details</a>
+      <a href="#">Book Details</a>
+    </nav>
+    <div class="inner_crud-section">
+      <h1 class="qualification_heading">Experience Details</h1>
+      <form class="frm">
+        <div class="form">
+            <input
+            type="text"
+            placeholder="Organization Name"
+            name="Organization_Name"
+            id="Organization_Name"
+          />
+          <input
+          type="text"
+          placeholder="Designation"
+          name="Designation"
+          id="Designation"
+        />
+        <input
+        type="Date"
+        placeholder="Date of Joining"
+        name="Date_of_Joining"
+        id="Date_of_Joining"
+      />
+      <input
+      type="Date"
+      placeholder="Date of Relieving"
+      name="Date_of_Relieving"
+      id="Date_of_Relieving"
+    />
+    <input
+    type="number"
+    placeholder="Pay Scale"
+    name="Pay_Scale"
+    id="Pay_Scale"
+  />
+        </div>
+        <div class="form">
+            <input
+            type="text"
+            placeholder="Job Profile"
+            name="Job_Profile"
+            id="Job_Profile"
+          />
+          <input
+          type="text"
+          placeholder="Reason for Leaving"
+          name="Reason_for_Leaving"
+          id="Reason_for_Leaving"
+        />
+        <input
+          type="text"
+          placeholder="Last Salary Drawn"
+          name="Last_Salary_Drawn"
+          id="Last_Salary_Drawn"
+        />
+ 
+
+        </div>
+        <div class="btn-div">
+          <button class="btn" type="button" id="addRow">Add Row</button>
+          <button class="btn" type="submit" id="submit">Save</button>
+        </div>
+        <input type="hidden" id="facultyID" name="facultyID" value="" />
+      </form>
+    </div>
+  </div>
+  <table id="data">
+    <thead>
+      <tr>
+        <th>Organization Name</th>
+        <th>Designation</th>
+        <th>Date of Joining</th>
+        <th>Date of Relieving</th>
+        <th>Pay Scale</th>
+        <th>Job Profile</th>
+        <th>Reason for Leaving</th>
+        <th>Last Salary Drawn</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script type="text/javascript" src="experience.js"></script>
+  
+</body>
+</html>
